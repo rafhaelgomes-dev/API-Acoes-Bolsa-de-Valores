@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+        <h3>Cotações Bolsa de Valores</h3>
+    </header>
+    <main>
+
+    <section id ="cotacoes">
+
+    <div id="botoes">
+        <h4 class="labels">Código da ação:</h4>
+      <input id="caixaTexto" type="text" placeholder="Código da ação">
+      <h4 class="labels">Período em dias:</h4>
+      <input id="caixaDias" type="text" placeholder="Dias">
+      <button id="botao" class="btn btn-light">Buscar</button>
+    </div>
+
+     <div id="listas">
+         <div>
+         <h3 class="labels">Cotações da ação</h3>
+        </div>
+         <div id = "informacoes">
+       <ul class="textosLista" id="data"></ul>
+       <ul class="textosLista" id = "abertura"></ul>
+       <ul class="textosLista" id = "fechamento"></ul>
+       <ul class="textosLista" id = "maxima"></ul>
+       <ul class="textosLista"id = "minima"></ul>
+    </div>
+     </div>
+
+    </section>
+
+    </main>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./services/api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
